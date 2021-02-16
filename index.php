@@ -13,23 +13,25 @@ var $ancho;
 var $largo;
 var $contenido;
 var $color;
+
 function introduce($cosa){
 $this->contenido = $cosa;
 }
 
 function muestra_contenido(){
-echo $this->contenido;
+ $this->contenido;
 }
+
 }
 $micaja = new Caja;
 echo "Con esto hemos creado, o mejor dicho, instanciado, un objeto de la clase Caja llamado $micaja."
 $micaja->introduce("algo");
 $micaja->muestra_contenido();
-echo "Con estas dos sentencias estamos introduciendo "algo" en la caja y luego estamos mostrando ese
+echo "Con estas dos sentencias estamos introduciendo "'algo'" en la caja y luego estamos mostrando ese
 contendido en el texto de la página. Nos fijamos que los métodos de un objeto se llaman utilizando el
-código "->"."
+código ->."
 echo "nombre_del_objeto->nombre_de_metodo()"
-echo "Para acceder a los atributos de una clase también se accede con el código "->". De esta forma:
+echo "Para acceder a los atributos de una clase también se accede con el código ->. De esta forma:
 nombre_del_objeto->nombre_del_atributo"
 ?>
 </body>
